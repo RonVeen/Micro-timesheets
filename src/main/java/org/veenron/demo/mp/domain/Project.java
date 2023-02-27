@@ -1,8 +1,10 @@
 package org.veenron.demo.mp.domain;
 
+import org.veenron.demo.mp.persist.Identifiable;
+
 import java.io.Serializable;
 
-public class Project implements Serializable {
+public class Project implements Serializable, Identifiable {
     private String uid;
     private String name;
     private boolean active;
